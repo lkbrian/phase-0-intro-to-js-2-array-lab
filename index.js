@@ -22,23 +22,23 @@ function destructivelyRemoveFirstCat(){
 }
 
 function appendCat(name){
-    const allcats = [...cats,`${name}`]
-    return allcats;
+    const newCats = [...cats,`${name}`]
+    return newCats;
 }
 
 function prependCat(name){
-    const allcats = [`${name}`, ...cats]
-    return allcats;
+    const newCats = [`${name}`, ...cats]
+    return newCats;
 }
 
 function removeLastCat(){
-    const allcats = cats.slice();
-     allcats.pop();
-     return allcats;
+    const newCats = cats.slice();
+     newCats.pop();
+     return newCats;
 }
 
 function removeFirstCat(){
-    const allcats = cats.slice();
-     allcats.shift();
-     return allcats;
+    const newCats = cats.slice();
+     newCats.shift();
+     return newCats;
 }
